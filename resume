@@ -1,0 +1,205 @@
+<style>
+h1 {
+  font-family: American Typewriter;
+}
+
+p {
+  font-family: American Typewriter;
+}
+
+h2 {
+  font-family: Impact, fantasy;
+}
+
+p {
+  font-family: American Typewriter;
+}
+
+h3 {
+  font-family: Impact, fantasy;
+}
+
+ol {
+  font-family: American Typewriter;
+}
+
+Ul {
+  font-family: American Typewriter;
+}
+
+img {
+  border-style: dots;
+  border-width: 10px;
+  border-color: LightBlue;
+}
+
+h1 {
+  color: White;
+}
+
+h2 {
+  color: pink;
+}
+
+ul {
+  list-style-type: square;
+}
+
+h3 {
+  color: White;
+}
+
+div {
+  border: 0.1px lightpink;
+  background-color: lightpink;
+  padding: 4px;
+  margin: 20px;
+}
+
+img {
+  width: 52px;
+  height: 50px;
+}
+
+photo {
+  width: 650px;
+  height: 650px;
+}
+</style>
+
+<body style="background-color:#34495E">
+</body>
+<h1>
+  <center>Erwann Imbaud</center>
+</h1>
+
+<a>
+<img class= "photo"   
+       src="https://scontent-lhr3-1.xx.fbcdn.net/v/t1.0-9/47267411_2103555783038941_2226586942613487616_n.jpg?_nc_cat=106&_nc_ohc=TaWQnxejg_IAQlz37OG4P-TR6VHFI6IFPkY3FzdfgWhnPSf-Z1RNjzgjg&_nc_ht=scontent-lhr3-1.xx&oh=392c4f4f7e2c7f79cf5099b3ddf21e06&oe=5E4170C6" alt="Photo">
+</a>
+
+<p><strong>MY PROFILE</strong> What defines me is my desire to never stop learning, team leading skills, and proficiency to adapt myself to every situation I face with quick thinking capabilities. I am looking forward to pursue my business ambition in the
+  next years while working with a market leading company. </p>
+
+<h2>EDUCATION</h2>
+
+<ol>
+  <li><strong>INSEEC BACHELOR</strong> Candidate for Bachelor of administration majoring in Finance; GPA equivalent of 3.8/4.0</li>
+  <li><strong>LYCÉE ST JOSEPH</strong> Equivalent of a Science High School diploma; Graduating with honors
+  </li>
+</ol>
+
+<h3>LANGUAGES</h3>
+<ul>
+  <li><strong>French</strong>: Mother tongue </li>
+  <li><strong>English</strong>: Fluent</li>
+  <li><strong>German</strong>: Professional</li>
+</ul>
+
+<hr width="50%" color="white" align=center>
+
+<h2>WORK HISTORY </h2>
+
+<h3>Golden Equator Group </h3>
+
+<p><strong>Singapore, Singapore &nbsp;⛩
+</strong></p>
+
+<p>Forged deeper understanding of finance and wealth management with collaborating with traders, analyst and wealth manager and client relationship. Expanded core knowledge and skills in marketing creating branding, digital, content, and effective communication
+  with individuals clients across functions and industries. </p>
+<p><small>April 2019 - August 2019
+</small></p>
+
+<h3><span class="Cycles CUM'S ">Cycles CUM’S</span></h3>
+<p><strong>Perigueux, France &nbsp;🚴‍♂️</strong></p>
+
+<p>Customer service/one on one consultation with up to a dozen clients per day, increasing store revenue by 40K$. Participated in the company marketing trough the design of advertisements published in European magazines.</p>
+<p><small>December 2017 - January 2018</small></p>
+
+<h3><span class="French District Court "> French District Court</span></h3>
+<p><strong>Perigueux, France &nbsp;⚖️</strong></p>
+
+<p>Observed and researched criminal court proceeding in a French court of Law in order to better understand the justice system</p>
+
+<p><small>June 2015 </small></p>
+
+<hr width="50%" color="white" align=center>
+
+<h2>SKILL SET</h2>
+<p>Organizational skills : able to prioritize and set achievable goals Communication skills Ability to accept constructive criticism and use it to my advantage I.T skills: Use of the Bloomberg terminal , Microsoft Office, Final cut Pro, Apple computer, Adobe
+  Suite, Trello, Slack, Apple computers.</p>
+
+<hr width="50%" color="white" align=center>
+
+<h2>Interests and accomplishments</h2>
+
+<p><strong>Sport - 🏆</strong></p>
+<p>Kayaking : 6 years of practice</p>
+<p>3rd at the French Championships</p>
+<p>4th at the European Championships</p>
+
+<p><strong>Travel - ✈️</strong></p>
+<p><strong>Europe:</strong> 19 countries Germany, Russia, Poland, Sweden, Austria, Letonia… &nbsp;🥖
+</p>
+
+<p><strong>Asia:</strong> USA, Mexico, Bahamas… &nbsp;🍟
+</p>
+
+<p><strong>North America:</strong> Singapore, Vietnam, Thailand...&nbsp;🍜
+</p>
+
+<hr width="50%" color="white" align=center>
+
+<h2>KEEP IN TOUCH</h2>
+
+<p><strong>erwann.imbaud@ece-france.com</strong> </p>
+
+<p><strong>+33 6.95.74.39.38</strong></p>
+
+<p><strong>65 Princes Square London</strong> </p>
+
+<div></div>
+<html>
+<center>
+
+  <head>
+    <meta charset="utf-8">
+  </head>
+
+  <body>
+    <h1 id="write_effect"></h1>
+    <script>
+      function getById(element) {
+        return document.getElementById(element)
+      }
+      var we = getById("write_effect")
+      var compteur = 0
+      var delOuAdd = true
+      window.setInterval(function() {
+        var texte = ["|", "L", "Li", "Lin", "Link", "Links|"]
+        if (delOuAdd) {
+          if (compteur < texte.length) {
+            we.innerHTML = texte[compteur]
+            compteur++
+          } else {
+            delOuAdd = false
+            compteur = compteur - 2
+          }
+        } else {
+          if (compteur <= 0) {
+            delOuAdd = true
+          } else {
+            we.innerHTML = texte[compteur]
+            compteur--
+          }
+        }
+      }, 200)
+    </script>
+</center>
+</body>
+
+<a href="https://www.instagram.com/erwann_imb/">
+  <center><img src="http://ichef.bbci.co.uk/news/976/cpsprodpb/C5CC/production/_89663605_instagram_logo_976.jpg" alt="Instagram"></a>
+
+<a href="https://www.linkedin.com/in/erwann-imbaud-inseecsport/?locale=fr_FR">
+  <img src="https://www2.le.ac.uk/offices/careers-new/copy2_of_images/linkedin-logo/image" alt="Linkedin"></a>
